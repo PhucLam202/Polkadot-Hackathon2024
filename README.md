@@ -86,7 +86,7 @@ Features:
 
 ## **Project Completed During the Hackathon**
 
- Website: A website that integrates AI to generate code files that can be run directly in the browser environment.
+We are developing a web-based application that integrates AI to generate code files, which can be executed directly within the browser environment.
 
 ---
 
