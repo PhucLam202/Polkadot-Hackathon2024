@@ -1,8 +1,8 @@
-# Polkadot-
+
 # Project Infomation
 
 ### Project Name: BubbleDOT
-### **Project Creation Date:** 9/2024
+##### **Project Creation Date:** 9/2024
 
 ---
 
@@ -13,6 +13,7 @@ BubbleDOT is an AI-powered coding assistant that can generate entire project fol
 ---
 
 # **Planned Code Deliverables during the Hackathon**
+
 ### Frontend (Web3 Integration)
 - Dashboard Page.
 - Code Generation Page.     
@@ -24,6 +25,10 @@ BubbleDOT is an AI-powered coding assistant that can generate entire project fol
 - [x] [Build data file](https://github.com/PhucLam202/polkadot-hackathon-2024/blob/43-BubbleDOT/bangkok/43-BubbleDOT/src/BubbleDOT-BE/src/services/build.Service.ts)(`buildProject()`) 
 - [ ] [Deploy smart contract](https://github.com/PhucLam202/polkadot-hackathon-2024/blob/43-BubbleDOT/bangkok/43-BubbleDOT/src/BubbleDOT-BE/src/services/deployDD.Service.ts)(`deployContract()`) 
 - [x] [Get data deploy](https://github.com/PhucLam202/polkadot-hackathon-2024/blob/43-BubbleDOT/bangkok/43-BubbleDOT/src/BubbleDOT-BE/src/services/getBuildDataFile.Service.ts)(`getFileContent()`)
+- [x] [Publish data to Phala network](https://github.com/PhucLam202/Polkadot-Hackathon2024/blob/main/BubbleDOT-BE/src/configs/publish.ts)
+      - Video Deploy Interact Phala: [youtube](https://youtu.be/7a5TuQ3yXY8) 
+- [x] [Chat AI](https://github.com/PhucLam202/Polkadot-Hackathon2024/blob/main/BubbleDOT-BE/src/controllers/chatAI.controller.ts)(`openAIEndpoint()`)
+- [x] [Chat AI Service](https://github.com/PhucLam202/Polkadot-Hackathon2024/blob/main/BubbleDOT-BE/src/services/chatAI.Service.ts)(`chatAI.Service()`)
 
 ### AI 
 - Code Snippet Generation
@@ -79,14 +84,6 @@ Features:
 
 ---
 
-### **Selected Bounty**
-
-- **Blockchain for good:**
-
-        Bounty proposition: Sustainable Development
-
----
-
 ## **Project Completed During the Hackathon**
 
  Website: A website that integrates AI to generate code files that can be run directly in the browser environment.
@@ -102,6 +99,7 @@ Features:
 
 - Lâm Thanh Phúc  
   **Role**: Back-end Developer
+  
   **Github**: [PhucLam202](https://github.com/PhucLam202)  
   **Email**: lamthanhphucit@gmail.com  
 
