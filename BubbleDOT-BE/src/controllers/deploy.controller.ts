@@ -1,5 +1,4 @@
 import { Request, Response, NextFunction } from 'express';
-import { readFlipperContract } from '../services/readFlipperContract.Service';
 import { initializeContract, deployContract, disconnectClient } from '../services/deployDD.Service';
 
 const deployEndpoint = async (req: Request, res: Response, next: NextFunction): Promise<void> => {

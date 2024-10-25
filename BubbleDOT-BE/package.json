@@ -1,14 +1,16 @@
 {
   "name": "bubble-be",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev": "ts-node ./server.ts",
     "build": "tsc --noEmit",
     "start": "node dist/server.js",
     "lint": "eslint .",
     "lint:fix": "eslint --fix .",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-agent": "phat-fn build --experimentalAsync",
+    "publish-agent": "phat-fn build --experimentalAsync && tsx BubbleDOT-BE/src/configs/publish.ts"
   },
   "nodemonConfig": {
     "ignore": [
@@ -21,12 +23,13 @@
   "license": "ISC",
   "description": "",
   "dependencies": {
+    "@apillon/sdk": "^3.2.0",
     "@aws-sdk/client-ec2": "^3.670.0",
     "@aws-sdk/client-s3": "^3.670.0",
     "@aws-sdk/client-ssm": "^3.670.0",
     "@dedot/contracts": "^0.5.0",
-    "@polkadot/api": "^13.2.1",
-    "@polkadot/keyring": "^13.1.1",
+    "@phala/fn": "^0.2.22",
+    "@polkadot/keyring": "12.6.2",
     "@types/cors": "^2.8.17",
     "aws-sdk": "^2.1691.0",
     "crypto": "^1.0.1",

@@ -2,7 +2,7 @@ import { DedotClient, WsProvider } from 'dedot';
 import { ContractDeployer } from 'dedot/contracts';
 import { FlipperContractApi } from '../../DedotScript/flipper';
 import { stringToHex } from 'dedot/utils';
-import { Keyring } from '@polkadot/keyring';
+import Keyring from '@polkadot/keyring';
 import { randomBytes } from 'crypto';
 import path from 'path';
 import { promises as fsPromises } from 'fs';
@@ -53,7 +53,7 @@ async function findFileInProject(fileName: string, startDir: string = process.cw
     return null;
 }
 export async function deployContract(deployer: ContractDeployer<FlipperContractApi>): Promise<string | undefined> {
-    const keyring = new Keyring({ type: 'sr25519'});
+    const keyring = new Keyring({ type: 'sr25519' });
     const alice = keyring.addFromUri('//Alice');
     console.log(alice.address);
 
@@ -64,7 +64,7 @@ export async function deployContract(deployer: ContractDeployer<FlipperContractA
 
     return new Promise<string | undefined>((resolve, reject) => {
         deployer.tx.new(true, { gasLimit: gasRequired, salt })
-            .signAndSend(alice, ({ status, events }) => {
+            .signAndSend(alice, ({ status, events }: { status: any, events: any }) => {
                 if (status.type === 'BestChainBlockIncluded' || status.type === 'Finalized') {
                     try {
                         const instantiatedEvent = deployer.client.events.contracts.Instantiated.find(events);
