@@ -116,7 +116,7 @@ We are developing a web-based application that integrates AI to generate code fi
 # **Material for Demo**
 **Details**
 
-- Demo video: [https://www.veed.io/view/8808e5a6-ffb4-408e-b289-a9cb91fbfbed?panel=share](https://www.youtube.com/watch?v=MCIxH1anTgY)
+- Demo video: https://www.youtube.com/watch?v=MCIxH1anTgY
 - Pitch deck: https://drive.google.com/file/d/1XqAPTgpTQYNuv0-3i4lrZFRVCgXRSDG-/view?usp=sharing
 
 ---
